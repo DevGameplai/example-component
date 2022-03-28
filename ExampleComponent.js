@@ -14,7 +14,7 @@ class ExampleComponent extends HTMLElement {
       </style>
     <iframe
         id="app-container"
-        src="index.html">
+        src="example_component.html">
     </iframe>
         `;
     }
