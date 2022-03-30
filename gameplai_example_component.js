@@ -1,24 +1,20 @@
-class ExampleComponent extends HTMLElement {
+class GameplaiExampleComponent extends HTMLElement {
     constructor() {
         super();
         const width = this.getAttribute("width") || "100%";
         const height = this.getAttribute("height") || "100%";
-        const betId = this.getAttribute("betId") ?? 'wdl';
         this.innerHTML = `
     <style>
-        #app-container {
+        * {
+          position: absolute;
           height: ${height};
           width: ${width};
-          margin: 0 auto;
           border: none;
         }
       </style>
-    <iframe
-        id="app-container"
-        src="index.html">
-    </iframe>
+    <iframe src="gameplai_example_component.html"></iframe>
         `;
     }
 }
 
-customElements.define('example-component', ExampleComponent);
+customElements.define('gameplai-example-component', GameplaiExampleComponent);
